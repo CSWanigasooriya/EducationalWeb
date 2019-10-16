@@ -1,54 +1,57 @@
 <html>
 <head>
 <?php include 'head.php' ?>
+<style>
+    body{
+        background-image:url(css/book.jpg);
+    }    
+</style>
 </head>
-    <body>
-    <?php include 'navbar.php' ?>
+    <body> 
+<?php include 'navbar.php' ?>
 <div class="container">
-    <div class="row">
+<div class="row card-panel fade">
+<h2 class="thin amber-text">Register</h2>
 <div class="card-content col s6">
-<form action="reserve.php" method="post" name="reg">
+<span id="mark"></span>
+<form action="insert.php" method="post" name="regForm" onsubmit="return validateForm()">
 <div class="input-field">
-<input type="text" id="fname" name="fname" class="grey-text">
-<label class="" for="name">First Name</label>
+<input type="text" id="fname" name="fname" class="black-text">
+<label class="black-text" for="name">First Name</label>
 </div>
 <div class="input-field">
-<input type="text" id="lname" name="lname" class="grey-text">
-<label class="" for="lname">Last Name</label>
+<input type="text" id="lname" name="lname" class="black-text">
+<label class="black-text" for="lname">Last Name</label>
 </div>
 <div class="input-field">
-<input type="email" id="mail" name="mail" class="validate grey-text">
-<label class="" for="mail">Email</label>
+<input type="email" id="mail" name="mail" class="black-text">
+<label class="black-text" for="mail">Email</label>
 </div>
 <div class="input-field">
-<input type="text" id="dob" name="dob" class="grey-text datepicker">
-<label class="active" for="dob">Date of Birth</label>
+<input type="text" id="dob" name="dob" class="black-text datepicker">
+<label class="active black-text" for="dob">Date of Birth</label>
 </div>
 <div class="input-field">
-<input type="text" id="address" name="address" class="grey-text">
-<label class="" for="address">Address</label>
+<input type="text" id="address" name="address" class="black-text">
+<label class="black-text" for="address">Address</label>
 </div>
 <div class="input-field">
-<input type="text" id="city" name="city" class="grey-text">
-<label class="" for="city">City</label>
+<input type="text" id="tel" name="tel" class="black-text">
+<label class="black-text" for="tel">Phone no.</label>
 </div>
 <div class="input-field">
-<input type="text" id="tel" name="tel" class="grey-text">
-<label class="" for="tel">Phone no.</label>
-</div>
-<div class="input-field">
-<input type="text" id="date" name="date" class="grey-text datepicker">
-<label class="" for="date">Select Date to Reserve</label>
+<input type="text" id="date" name="date" class="black-text datepicker">
+<label class="black-text" for="date">Select Date to Reserve</label>
 </div>
 <div class="input-field col s6">
-<input type="text" id="ftime" name="ftime" class="grey-text timepicker">
-<label class="" for="ftime">From</label>
+<input type="text" id="ftime" name="ftime" class="black-text timepicker">
+<label class="black-text" for="ftime">From</label>
 </div>
 <div class="input-field col s6">
-<input type="text" id="ttime" name="ttime" class="grey-text timepicker">
-<label class="" for="ttime">To</label>
+<input type="text" id="ttime" name="ttime" class="black-text timepicker">
+<label class="black-text" for="ttime">To</label>
 </div>
-<input type="submit" value="Submit to Check Eligibilty" class="btn blue btn-large" onclick="Materialize.toast('Redirecting', 4000,'',function(){alert('Your toast was dismissed')})">
+<input type="submit" value="Check Eligibilty" class="btn blue btn-large" onclick="">
 </form><br>
     </div>
 <div class="col s6">
