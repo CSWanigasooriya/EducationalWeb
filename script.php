@@ -1,6 +1,32 @@
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+
+<!--Form validation-->
+<script>
+function validateForm() {
+    var a = document.forms["regForm"]["fname"].value;
+    var b = document.forms["regForm"]["lname"].value;
+    var c = document.forms["regForm"]["fname"].value;
+    var d = document.forms["regForm"]["mail"].value;
+    var e = document.forms["regForm"]["dob"].value;
+    var f = document.forms["regForm"]["address"].value;
+    var g = document.forms["regForm"]["tel"].value;
+    var h = document.forms["regForm"]["date"].value;
+    var i = document.forms["regForm"]["ftime"].value;
+    var j = document.forms["regForm"]["ttime"].value;
+    var mark=document.getElementById("mark");
+    
+  if (a == ""||b == ""||c == ""||d == ""||e == ""||f == ""||g == ""||h == ""||i == ""||j == "") {
+     document.getElementById("mark").innerHTML="**Please fill all the required fileds";
+    return false;
+  }
+}
+</script>
+<script>M.Tabs.init(document.querySelectorAll('.tabs'), { swipeable: true });</script>
+<!--Collapse the side navbar-->
 <script>$(".button-collapse").sideNav(); $('.collapsible').collapsible();</script>
+
+<!--Dropdown menu-->
 <script>  $('.dropdown-button').dropdown({
 inDuration: 300,
 outDuration: 225,
@@ -12,6 +38,8 @@ alignment: 'left',
 stopPropagation: false
 }
 );</script>
+
+<!--Carousel-->
 <script>$(document).ready(function(){
 $('.carousel').carousel();});</script>
 <script>$('.carousel').carousel({
@@ -22,6 +50,8 @@ function autoplay() {
 $('.carousel').carousel('next');
 setTimeout(autoplay, 6000);
 }</script>
+
+
 <script>window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -31,6 +61,8 @@ function scrollFunction() {
         document.getElementById("myBtn").style.display = "none";
     }
 }</script>
+
+<!--Initialize the modal-->
 <script>
   (function ($) {
     $(function () {
@@ -50,10 +82,14 @@ function scrollFunction() {
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space</script>
+
+<!--Function to go to top-->
 <script>function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }</script>
+
+<!--Initialize the slider-->
 <script>$('.slider').slider({
         indicators:false
     });</script>
@@ -70,6 +106,8 @@ function scrollFunction() {
   Materialize.scrollFire(options);
 });
 </script>
+
+<!--Datepicker-->
 <script>
   $(document).ready(function(){
     $('.datepicker').datepicker();
@@ -93,8 +131,11 @@ function scrollFunction() {
     ampmclickable: true, // make AM PM clickable
     aftershow: function(){} //Function for after opening timepicker
   });</script>
+
 <script>$('.tap-target').tapTarget('open');
 $('.tap-target').tapTarget('close');</script>
+
+<!--Timepicker-->
 <script>
   $(document).ready(function(){
     $('.timepicker').timepicker();
@@ -114,6 +155,8 @@ $('.tap-target').tapTarget('close');</script>
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, options);
   });</script>
+
+<!--Parallax Initialize-->
 <script>$(document).ready(function(){
       $('.parallax').parallax();
     });</script>
