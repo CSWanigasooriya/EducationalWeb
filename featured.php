@@ -1,14 +1,14 @@
 <div class="section">
 <div class="row">
-    <h4 class="center">Featured Courses</h4>
-   <div class="card-content">
-       <p>Iis ita ipsum senserit, eu quis nescius, probant esse deserunt, consequat 
-           instituendarum si mandaremus, quorum firmissimum deserunt quorum deserunt ita 
-           ita aliqua hic quid ubi anim incurreret id aliquip, amet tractavissent 
-           incididunt quis cernantur. Do dolor culpa ad aliquip. A ingeniis ab probant ea 
-           mandaremus imitarentur sed appellat nam et ipsum sed summis, incididunt ex 
-           iudicem qui duis admodum distinguantur, non quem o quem, ad malis est irure, 
-           ipsum mandaremus despicationes. Nostrud minim </p>
+<h4 class="center">Featured Courses</h4>
+<div class="card-content">
+<p>Iis ita ipsum senserit, eu quis nescius, probant esse deserunt, consequat 
+instituendarum si mandaremus, quorum firmissimum deserunt quorum deserunt ita 
+ita aliqua hic quid ubi anim incurreret id aliquip, amet tractavissent 
+incididunt quis cernantur. Do dolor culpa ad aliquip. A ingeniis ab probant ea 
+mandaremus imitarentur sed appellat nam et ipsum sed summis, incididunt ex 
+iudicem qui duis admodum distinguantur, non quem o quem, ad malis est irure, 
+ipsum mandaremus despicationes. Nostrud minim </p>
 </div>
 </div>
 <div class="row">

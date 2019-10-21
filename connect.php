@@ -1,3 +1,8 @@
 <?php
-$dbname = new PDO('mysql:host=localhost;dbname=cnc;charset=utf8', 'root', '', array(PDO::ATTR_EMULATE_PREPARES => false,PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+//DATABASE CONNECTION
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db = "cnc";
+$conn = mysqli_connect($servername, $username, $password,$db);
 ?>
